@@ -76,6 +76,14 @@ export function playUjian(onExit) {
 
 const tanggal = iso => new Date(iso).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
 
+const LOGO = `<svg class="cert-logo" viewBox="0 0 100 116" role="img" aria-label="Logo Padepokan Agile">
+  <defs><linearGradient id="pa-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F62C9"/><stop offset="1" stop-color="#1E4396"/></linearGradient></defs>
+  <path d="M50 3 L94 17 Q95 72 50 113 Q5 72 6 17 Z" fill="#9CC3EE"/>
+  <path d="M50 9 L88 21 Q88 69 50 105 Q12 69 12 21 Z" fill="url(#pa-g)" stroke="#fff" stroke-width="3"/>
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 37 A20 20 0 1 0 50 77 L72 77"/><path d="M66 70 L73 77 L66 84"/><circle cx="64" cy="34" r="6"/>
+  </g></svg>`;
+
 /** Halaman sertifikat untuk ?s=KODE. Bisa dibuka siapa saja yang memegang tautannya. */
 export async function halamanSertifikat(kode) {
   document.title = 'Sertifikat · Padepokan Agile';
@@ -92,13 +100,13 @@ export async function halamanSertifikat(kode) {
   const page = $(`<div class="certpage">
     <article class="cert" aria-label="Sertifikat">
       <div class="cert-in">
+        ${LOGO}
         <p class="cert-org">PADEPOKAN AGILE</p>
-        <h1 class="cert-h">Sertifikat Kelulusan</h1>
-        <p class="cert-sub">Ujian Sabuk Pendekar Agile</p>
+        <h1 class="cert-h">Sertifikat Pendekar Agile</h1>
         <div class="cert-av"></div>
         <p class="cert-small">dengan ini menyatakan bahwa</p>
         <p class="cert-name">${esc(d.nama)}</p>
-        <p class="cert-small">telah <b>LULUS</b> Ujian Sabuk dengan nilai <b>${esc(d.skor)}/${esc(d.total)}</b><br>dan resmi menjadi <b>Pendekar Agile</b></p>
+        <p class="cert-small">telah <b>LULUS</b> dengan nilai <b>${esc(d.skor)}/${esc(d.total)}</b><br>dan resmi menjadi <b>Pendekar Agile</b></p>
         <blockquote class="cert-visi">“Membangun masyarakat Indonesia yang tangkas dan adaptif”</blockquote>
         <div class="cert-foot"><span>${esc(tanggal(d.terbit_at))}</span><span>Kode: <b>${esc(d.kode)}</b></span></div>
         <p class="cert-verify">Periksa keaslian: ${esc(url.replace(/^https?:\/\//, ''))}</p>
@@ -113,7 +121,7 @@ export async function halamanSertifikat(kode) {
   const c = page.querySelector('#copy'); if (c) c.onclick = copy;
   const s = page.querySelector('#share');
   if (s) s.onclick = async () => {
-    if (navigator.share) { try { await navigator.share({ title: 'Sertifikat Pendekar Agile', text: `${d.nama} lulus Ujian Sabuk Padepokan Agile!`, url }); } catch (e) { /* dibatalkan */ } }
+    if (navigator.share) { try { await navigator.share({ title: 'Sertifikat Pendekar Agile', text: `${d.nama} resmi menjadi Pendekar Agile!`, url }); } catch (e) { /* dibatalkan */ } }
     else copy();
   };
   root.replaceChildren(page);

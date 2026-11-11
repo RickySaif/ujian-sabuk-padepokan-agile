@@ -152,9 +152,12 @@ canvas.avatar{image-rendering:pixelated;display:block}
 /* sertifikat: dirancang agar utuh dalam satu tangkapan layar ponsel */
 :root{--navy:#233F6E;--navy-d:#172B4D}
 .certpage{display:grid;gap:14px;padding-top:6px}
-.cert{background:#FBF7EC;border:4px solid var(--navy);border-radius:6px;padding:8px;box-shadow:0 6px 0 rgba(0,0,0,.28)}
-.cert-in{border:2px solid #C9A227;outline:1px solid var(--navy);outline-offset:3px;padding:20px 16px 14px;text-align:center;display:grid;justify-items:center;gap:6px;
+.cert{width:100%;max-width:600px;margin:0 auto;background:#FBF7EC;border:4px solid var(--navy);border-radius:6px;padding:8px;box-shadow:0 6px 0 rgba(0,0,0,.28)}
+.cert-in{border:2px solid #C9A227;outline:1px solid var(--navy);outline-offset:3px;padding:22px 16px 14px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:8px;min-height:min(150vw,820px);
   background:linear-gradient(135deg,transparent 0 46%,rgba(35,63,110,.06) 46% 100%)}
+.cert-logo{width:64px;height:auto;display:block}
+.cert-sign{display:grid;justify-items:center;gap:4px;font-size:12px;color:#4A4033;margin-top:10px}
+.cert-line{display:block;width:180px;border-top:1.5px solid var(--navy)}
 .cert-org{font-weight:700;letter-spacing:.24em;font-size:13px;color:var(--navy)}
 .cert-h{font:700 30px/1.1 "Playfair Display",Georgia,serif;color:var(--navy-d)}
 .cert-sub{font-size:14px;color:#8A6D12;font-weight:600;letter-spacing:.04em}
