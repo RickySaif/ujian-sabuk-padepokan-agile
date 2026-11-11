@@ -1,0 +1,17 @@
+{
+  "name": "ujian-sabuk-padepokan-agile",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Permainan onboarding calon anggota Padepokan Agile: visi, misi, ikrar, ujian sabuk, dan sertifikat.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node tests/check.mjs",
+    "test:db": "bash tests/db-test.sh",
+    "test:play": "node tests/playthrough.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.0"
+  }
+}

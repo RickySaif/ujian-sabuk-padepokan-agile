@@ -1,0 +1,292 @@
+{
+  "company": {
+    "name": "Padepokan Agile",
+    "campus": "Padepokan Agile",
+    "tagline": "Ujian Sabuk untuk calon Pendekar Agile",
+    "color": "#233F6E"
+  },
+  "settings": { "order": "sequential" },
+  "welcome": {
+    "from": "Eyang Guru",
+    "role": "Guru Besar Padepokan",
+    "look": { "skin": 2, "hs": 3, "hair": 6, "top": 1, "bottom": 1, "skirt": 0, "cap": 0, "glasses": 1 },
+    "lines": [
+      "Sugeng rawuh, {name}! Selamat datang di Padepokan Agile.",
+      "Sebelum resmi menjadi Pendekar Agile, kamu perlu memahami siapa kami: visi, misi, dan ikrar kami.",
+      "Lima pelatih menunggumu, dari Sabuk Putih sampai Sabuk Coklat. Masing-masing mengajarkan satu bagian.",
+      "Setelah semua sabuk kamu raih, kembalilah ke pendopo ini untuk Ujian Sabuk. Lulus, dan kamu mendapat sertifikat.",
+      "Pelatih pertama sudah menunggu. Cari tanda “!” di atas kepalanya."
+    ]
+  },
+  "levels": ["Calon Murid", "Sabuk Putih", "Sabuk Kuning", "Sabuk Hijau", "Sabuk Biru", "Sabuk Coklat"],
+  "facts": [
+    "Padepokan Agile punya 5 pengurus harian, 50+ anggota tetap, dan 600+ anggota forum diskusi.",
+    "Kegiatan pertama di portofolio: Agile Indonesia Unconference di Grand Sahid Jaya, Desember 2022.",
+    "Padepokan Agile pernah mengadakan Objectives & Key Results Workshop di DOT Indonesia, Februari 2023.",
+    "AgileHR Lean Coffee diadakan bersama Sevima pada September 2023.",
+    "Agile Indonesia Unconference kembali digelar di Telkom Landmark Tower, Juli 2024.",
+    "Jakarta Agile Meetup diadakan di Teal Agility, Februari 2025.",
+    "Agile Indonesia Conference digelar di Danamon, November 2025.",
+    "Situs Padepokan Agile: padepokanagile.id. Surel: pendekar.agile@gmail.com."
+  ],
+  "missions": [
+    {
+      "id": "sabuk-putih",
+      "title": "Mengenal Padepokan",
+      "building": "Balai Sabuk Putih",
+      "icon": "🏯",
+      "color": "#E9E4D8",
+      "guide": { "name": "Mbak Laras", "role": "Pelatih Sabuk Putih" },
+      "intro": [
+        "Halo {name}, aku Mbak Laras. Setiap pendekar mulai dari Sabuk Putih.",
+        "Kita kenalan dulu dengan Padepokan Agile: siapa kami, dan seberapa besar keluarga ini."
+      ],
+      "outro": ["Sabuk Putih sudah terikat. Mas Bayu menunggumu di Menara Visi."],
+      "tip": "Ingat, {name}: anggota kami disebut Pendekar Agile.",
+      "xp": 100,
+      "badge": { "name": "Sabuk Putih", "emoji": "🤍" },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Apa itu Padepokan Agile?",
+          "body": "Padepokan Agile adalah komunitas tempat para Pendekar Agile berdiskusi, berkolaborasi, dan menempa diri.\n\nSeperti padepokan silat, di sini kita berlatih bersama. Bedanya, jurus yang kita pelajari adalah cara bekerja yang tangkas dan adaptif.",
+          "link": { "label": "Kunjungi padepokanagile.id", "url": "https://padepokanagile.id" }
+        },
+        {
+          "type": "cards",
+          "title": "Tentang kami",
+          "cards": [
+            { "emoji": "🧑‍🏫", "front": "5 Pengurus Harian", "back": "Mereka yang menjaga padepokan tetap berjalan sehari-hari." },
+            { "emoji": "🥋", "front": "50+ Anggota Tetap", "back": "Pendekar Agile yang aktif berlatih dan berkontribusi." },
+            { "emoji": "💬", "front": "600+ Anggota Forum Diskusi", "back": "Tempat bertanya, berbagi, dan belajar bersama." },
+            { "emoji": "⚔️", "front": "Pendekar Agile", "back": "Sebutan untuk para anggota Padepokan Agile. Sebentar lagi itu kamu, {name}." }
+          ]
+        },
+        {
+          "type": "quiz",
+          "title": "Cek pemahaman",
+          "questions": [
+            { "id": "putih-1", "q": "Apa sebutan untuk anggota Padepokan Agile?", "options": ["Santri Scrum", "Pendekar Agile", "Ksatria Kanban", "Murid Lean"], "answer": 1, "why": "Betul. Anggota kami disebut Pendekar Agile." },
+            { "id": "putih-2", "q": "Kira-kira berapa anggota forum diskusi Padepokan Agile?", "options": ["60+", "600+", "6.000+", "60.000+"], "answer": 1, "why": "Betul, 600+ anggota forum diskusi." },
+            { "id": "putih-3", "q": "Di mana kamu bisa membaca informasi resmi Padepokan Agile?", "options": ["padepokanagile.id", "agile.co.id", "pendekar.com", "scrum.org"], "answer": 0, "why": "Betul, situs resminya padepokanagile.id." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sabuk-kuning",
+      "title": "Visi Padepokan Agile",
+      "building": "Menara Visi",
+      "icon": "🔭",
+      "color": "#F2C230",
+      "guide": { "name": "Mas Bayu", "role": "Pelatih Sabuk Kuning" },
+      "intro": [
+        "Selamat datang di Menara Visi, {name}. Aku Mas Bayu.",
+        "Visi adalah arah. Kalau kamu hafal satu kalimat saja dari padepokan ini, hafalkan yang ini."
+      ],
+      "outro": ["Arahnya sudah jelas. Lanjut ke Teh Sari di Sasana Misi untuk tahu cara kita menujunya."],
+      "tip": "Visi kita: “Membangun masyarakat Indonesia yang tangkas dan adaptif.”",
+      "xp": 100,
+      "badge": { "name": "Sabuk Kuning", "emoji": "💛" },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Visi Padepokan Agile",
+          "body": "“Membangun masyarakat Indonesia yang tangkas dan adaptif.”\n\nPerhatikan: yang ingin dibangun adalah masyarakat Indonesia, bukan hanya anggota komunitas. Kita berlatih supaya bisa ikut menularkan cara kerja yang tangkas dan adaptif ke sekitar kita."
+        },
+        {
+          "type": "cards",
+          "title": "Membedah visi",
+          "cards": [
+            { "emoji": "🏗️", "front": "Membangun", "back": "Kerja yang terus berlangsung, bukan sekali jadi." },
+            { "emoji": "🇮🇩", "front": "Masyarakat Indonesia", "back": "Sasaran kita lebih luas dari komunitas: masyarakat Indonesia." },
+            { "emoji": "⚡", "front": "Tangkas", "back": "Sigap dan cekatan menanggapi keadaan." },
+            { "emoji": "🌱", "front": "Adaptif", "back": "Mampu menyesuaikan diri ketika keadaan berubah." }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Susun kalimat visi",
+          "prompt": "Ketuk potongan kalimat sesuai urutan visi.",
+          "items": ["Membangun", "masyarakat Indonesia", "yang tangkas", "dan adaptif"]
+        },
+        {
+          "type": "quiz",
+          "title": "Cek pemahaman",
+          "questions": [
+            { "id": "kuning-1", "q": "Apa visi Padepokan Agile?", "options": ["Menjadi komunitas Agile terbesar di Asia Tenggara", "Membangun masyarakat Indonesia yang tangkas dan adaptif", "Mencetak Scrum Master bersertifikat sebanyak-banyaknya", "Membangun perusahaan Indonesia yang cepat dan efisien"], "answer": 1, "why": "Tepat. “Membangun masyarakat Indonesia yang tangkas dan adaptif.”" },
+            { "id": "kuning-2", "q": "Dua sifat apa yang ingin dibangun menurut visi?", "options": ["Cepat dan hemat", "Disiplin dan patuh", "Tangkas dan adaptif", "Kreatif dan kompetitif"], "answer": 2, "why": "Betul: tangkas dan adaptif." },
+            { "id": "kuning-3", "q": "Siapa yang ingin dibangun menurut visi?", "options": ["Para pengurus harian", "Perusahaan teknologi", "Masyarakat Indonesia", "Anggota tetap saja"], "answer": 2, "why": "Betul, masyarakat Indonesia." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sabuk-hijau",
+      "title": "Misi Padepokan Agile",
+      "building": "Sasana Misi",
+      "icon": "🎯",
+      "color": "#4FA845",
+      "guide": { "name": "Teh Sari", "role": "Pelatih Sabuk Hijau" },
+      "intro": [
+        "Halo {name}, aku Teh Sari. Kalau visi adalah arah, misi adalah cara kita menujunya.",
+        "Padepokan Agile punya dua misi. Yang satu ke dalam, yang satu ke luar."
+      ],
+      "outro": ["Dua misi sudah kamu pahami. Sekarang saatnya berikrar. Bang Raka menunggu di Pendopo Ikrar."],
+      "tip": "Misi pertama untuk para Pendekar Agile, misi kedua untuk masyarakat.",
+      "xp": 100,
+      "badge": { "name": "Sabuk Hijau", "emoji": "💚" },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Dua misi kita",
+          "body": "1. Menjadi sasana diskusi dan kolaborasi bagi para Pendekar Agile untuk berinovasi dan meningkatkan potensi diri.\n\n2. Menyediakan informasi dan media untuk meningkatkan wawasan dan kemampuan masyarakat dalam menghadapi tantangan perubahan.\n\nMisi pertama melayani sesama Pendekar Agile. Misi kedua melayani masyarakat luas."
+        },
+        {
+          "type": "match",
+          "title": "Pasangkan bagian misi",
+          "prompt": "Ketuk satu di kiri, lalu pasangannya di kanan.",
+          "pairs": [
+            ["Sasana diskusi dan kolaborasi", "bagi para Pendekar Agile"],
+            ["Informasi dan media", "bagi masyarakat"],
+            ["Berinovasi dan meningkatkan potensi diri", "tujuan misi pertama"],
+            ["Menghadapi tantangan perubahan", "tujuan misi kedua"]
+          ]
+        },
+        {
+          "type": "quiz",
+          "title": "Cek pemahaman",
+          "questions": [
+            { "id": "hijau-1", "q": "Menurut misi pertama, Padepokan Agile menjadi sasana diskusi dan kolaborasi bagi siapa?", "options": ["Hanya pengurus harian", "Para Pendekar Agile", "Perusahaan mitra", "Pemerintah daerah"], "answer": 1, "why": "Betul, bagi para Pendekar Agile." },
+            { "id": "hijau-2", "q": "Misi kedua: menyediakan informasi dan media untuk …", "options": ["mempromosikan produk anggota", "menjual pelatihan berbayar", "meningkatkan wawasan dan kemampuan masyarakat dalam menghadapi tantangan perubahan", "mengumpulkan data peserta acara"], "answer": 2, "why": "Tepat. Misi kedua melayani masyarakat yang menghadapi perubahan." },
+            { "id": "hijau-3", "q": "{name} merangkum materi sebuah meetup lalu membagikannya terbuka untuk umum. Ini paling dekat dengan misi yang mana?", "options": ["Misi pertama", "Misi kedua", "Bukan bagian dari misi", "Itu visi, bukan misi"], "answer": 1, "why": "Betul. Membagikan informasi ke masyarakat adalah misi kedua." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sabuk-biru",
+      "title": "Ikrar Pendekar Agile",
+      "building": "Pendopo Ikrar",
+      "icon": "🤝",
+      "color": "#2F6FD6",
+      "guide": { "name": "Bang Raka", "role": "Pelatih Sabuk Biru" },
+      "intro": [
+        "{name}, aku Bang Raka. Ini bagian yang paling penting.",
+        "Visi dan misi milik padepokan. Ikrar adalah janjimu sendiri sebagai Pendekar Agile. Ada tiga."
+      ],
+      "outro": ["Ikrarmu sudah tercatat. Satu sabuk lagi: Uni Dewi di Gelanggang Jurus."],
+      "tip": "Terbuka dan berintegritas. Kolaborasi dan sinergi. Menempa diri dan aktif berkreasi.",
+      "xp": 100,
+      "badge": { "name": "Sabuk Biru", "emoji": "💙" },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Ikrar Pendekar Agile",
+          "body": "1. Menjunjung tinggi keterbukaan dan integritas.\n\n2. Mengutamakan kolaborasi dan sinergi dalam interaksi.\n\n3. Senantiasa menempa diri dan berpartisipasi aktif dalam kreasi dan inovasi."
+        },
+        {
+          "type": "cards",
+          "title": "Tiga janji",
+          "cards": [
+            { "emoji": "🪟", "front": "Keterbukaan dan integritas", "back": "Jujur soal apa yang terjadi, termasuk kesalahan sendiri. Kata dan perbuatan sejalan." },
+            { "emoji": "🧩", "front": "Kolaborasi dan sinergi", "back": "Dalam setiap interaksi, kita mencari cara bekerja bersama, bukan bersaing." },
+            { "emoji": "🔥", "front": "Menempa diri, aktif berkreasi", "back": "Terus belajar, dan ikut turun tangan dalam kreasi dan inovasi." }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Urutkan ikrar",
+          "prompt": "Ketuk ketiga ikrar sesuai urutannya.",
+          "items": [
+            "Menjunjung tinggi keterbukaan dan integritas",
+            "Mengutamakan kolaborasi dan sinergi dalam interaksi",
+            "Senantiasa menempa diri dan berpartisipasi aktif dalam kreasi dan inovasi"
+          ]
+        },
+        {
+          "type": "quiz",
+          "title": "Ikrar dalam praktik",
+          "questions": [
+            { "id": "biru-1", "q": "{name} sadar ada data keliru di materi yang sudah ia presentasikan. Sikap yang sesuai ikrar?", "options": ["Diam saja karena belum ada yang sadar", "Mengakui secara terbuka lalu memperbaikinya", "Menyalahkan sumber datanya", "Menghapus materi tanpa penjelasan"], "answer": 1, "why": "Betul. Itulah keterbukaan dan integritas." },
+            { "id": "biru-2", "q": "Dua anggota merencanakan acara serupa di waktu yang sama. Apa yang paling sesuai ikrar?", "options": ["Biarkan bersaing, yang terbaik menang", "Batalkan keduanya", "Ajak keduanya bergabung dan bersinergi", "Pilih yang lebih senior"], "answer": 2, "why": "Betul. Kolaborasi dan sinergi dalam interaksi." },
+            { "id": "biru-3", "q": "Ada panggilan relawan fasilitator untuk unconference berikutnya. {name} belum pernah jadi fasilitator. Sikap yang sesuai ikrar?", "options": ["Mendaftar dan belajar sambil berkontribusi", "Menunggu sampai merasa ahli", "Menolak karena bukan tugasnya", "Menyuruh orang lain saja"], "answer": 0, "why": "Betul. Menempa diri dan berpartisipasi aktif." },
+            { "id": "biru-4", "q": "Mana yang BUKAN bagian dari ikrar Pendekar Agile?", "options": ["Menjunjung tinggi keterbukaan dan integritas", "Mengutamakan kolaborasi dan sinergi dalam interaksi", "Mengutamakan senioritas dalam setiap diskusi", "Senantiasa menempa diri dan berpartisipasi aktif dalam kreasi dan inovasi"], "answer": 2, "why": "Betul. Senioritas tidak ada dalam ikrar kita." }
+          ]
+        },
+        {
+          "type": "checklist",
+          "title": "Ucapkan ikrarmu",
+          "prompt": "Baca setiap ikrar dengan sungguh-sungguh, lalu centang sebagai janjimu.",
+          "items": [
+            { "id": "ikrar-1", "text": "Saya akan menjunjung tinggi keterbukaan dan integritas." },
+            { "id": "ikrar-2", "text": "Saya akan mengutamakan kolaborasi dan sinergi dalam interaksi." },
+            { "id": "ikrar-3", "text": "Saya akan senantiasa menempa diri dan berpartisipasi aktif dalam kreasi dan inovasi." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sabuk-coklat",
+      "title": "Jurus dan Gelanggang",
+      "building": "Gelanggang Jurus",
+      "icon": "🥋",
+      "color": "#8B5A2B",
+      "guide": { "name": "Uni Dewi", "role": "Pelatih Sabuk Coklat" },
+      "intro": [
+        "Halo {name}, aku Uni Dewi. Pendekar perlu tahu jurus apa yang dikuasai padepokannya.",
+        "Di sini kamu mengenal bidang kompetensi kami, bentuk kerja sama, dan gelanggang yang pernah kami datangi."
+      ],
+      "outro": ["Semua sabuk sudah kamu raih! Kembalilah ke Eyang Guru di pendopo utama untuk Ujian Sabuk."],
+      "tip": "Seminar, konferensi, kuliah umum, meetup, people development, coaching: semua gelanggang kita.",
+      "xp": 100,
+      "badge": { "name": "Sabuk Coklat", "emoji": "🤎" },
+      "steps": [
+        {
+          "type": "cards",
+          "title": "Bidang kompetensi",
+          "cards": [
+            { "emoji": "💻", "front": "Transformasi Digital", "back": "Mengubah cara organisasi bekerja dengan memanfaatkan teknologi." },
+            { "emoji": "🧭", "front": "Kepemimpinan", "back": "Memimpin tim dan organisasi melewati perubahan." },
+            { "emoji": "🔄", "front": "Agile", "back": "Cara kerja yang mengutamakan kolaborasi, umpan balik cepat, dan adaptasi." },
+            { "emoji": "🏉", "front": "Scrum", "back": "Kerangka kerja Agile yang bekerja dalam putaran pendek bernama sprint." },
+            { "emoji": "📋", "front": "Kanban", "back": "Memvisualkan alur kerja dan membatasi pekerjaan yang berjalan bersamaan." },
+            { "emoji": "🚀", "front": "DevOps", "back": "Menyatukan pengembangan dan operasional supaya rilis lebih cepat dan andal." },
+            { "emoji": "🎯", "front": "OKR", "back": "Objectives & Key Results: menetapkan tujuan dan hasil kunci yang terukur." }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Bidang kerja sama",
+          "prompt": "Pasangkan bentuk kerja sama dengan contohnya.",
+          "pairs": [
+            ["Seminar & Pelatihan", "Agile Fundamental Workshop"],
+            ["Conference / Unconference", "Agile Indonesia Unconference"],
+            ["Meetup Komunitas", "Jakarta Agile Meetup"],
+            ["Coaching", "Pendampingan tim secara langsung"]
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Jejak gelanggang",
+          "prompt": "Urutkan kegiatan ini dari yang paling lama.",
+          "items": [
+            "Agile Indonesia Unconference, Grand Sahid Jaya (Des 2022)",
+            "Objectives & Key Results Workshop, DOT Indonesia (Feb 2023)",
+            "AgileHR Lean Coffee, Sevima (Sep 2023)",
+            "Agile Indonesia Unconference, Telkom Landmark Tower (Jul 2024)",
+            "Agile Indonesia Conference, Danamon (Nov 2025)"
+          ]
+        },
+        {
+          "type": "quiz",
+          "title": "Cek pemahaman",
+          "questions": [
+            { "id": "coklat-1", "q": "Mana yang termasuk bidang kerja sama Padepokan Agile?", "options": ["Jual-beli perangkat lunak", "Coaching", "Rekrutmen tenaga kerja", "Audit keuangan"], "answer": 1, "why": "Betul. Bidang kerja sama kami: seminar & pelatihan, conference/unconference, kuliah umum, meetup komunitas, people development, dan coaching." },
+            { "id": "coklat-2", "q": "Mana yang termasuk bidang kompetensi Padepokan Agile?", "options": ["OKR", "Akuntansi pajak", "Desain interior", "Hukum perdata"], "answer": 0, "why": "Betul. OKR salah satu bidang kompetensi kami." }
+          ]
+        }
+      ]
+    }
+  ]
+}
